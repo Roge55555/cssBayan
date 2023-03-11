@@ -1,3 +1,53 @@
 p {
-    color: blue;
+    font-weight: 900;
+    font-size: xx-large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 80%;
+    margin: 0vw;
+
+    padding-bottom: 1vw;
+}
+
+button {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 80%;
+    margin: auto;
+    display: inline-flex;
+
+    border-bottom: 0em;
+    border-left: 0em;
+    border-right: 0em;
+    border-width: 0.2vw;
+    border-color: gray;
+    
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    
+    }
+
+div {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: block;
+
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+div.image, button:hover {
+    cursor: pointer;
 }
