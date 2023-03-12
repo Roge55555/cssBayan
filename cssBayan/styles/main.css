@@ -73,6 +73,7 @@ div {
 
 .iconPlus, .iconClose {
     display: none;
+    transition-duration: 0.5s;
 }
 
 .listMemes:hover button {
