@@ -1,0 +1,151 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+.listMemes {
+    width: 80%;
+}
+
+p {
+    font-weight: 900;
+    font-size: xx-large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 80%;
+    margin: auto;
+
+    padding-bottom: 1vw;
+}
+
+button {
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+    width: 100%;
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 0em;
+    border-left: 0em;
+    border-right: 0em;
+    border-width: 0.2vw;
+    border-color: gray;
+    
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    
+    }
+
+div {
+   
+    margin: auto;
+}
+
+.memeImg {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: block;
+
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+
+}
+
+.memeElement {
+    width: 100%;
+}
+
+.image {
+    max-height: 0em;
+    visibility: hidden;
+    transition-duration: 0.5s;
+}
+
+.iconPlus, .iconClose {
+    display: none;
+    transition-duration: 0.5s;
+}
+
+.chosen.memeElement .image{
+    max-height: 200em;
+    visibility: visible;
+}
+
+.chosen.memeElement button{
+    color: black;
+}
+
+.chosen.memeElement .iconPlus{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    p {
+        font-size: x-large;
+    }
+
+    button {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    p {
+        font-size: large;
+    }
+
+    button {
+        font-size: small;
+    }
+}
+
+@media (hover: hover) {
+    .listMemes:hover button {
+        cursor: pointer;
+        color: black;
+        visibility: visible;
+    }
+    
+    .listMemes:hover .iconPlus {
+        display: inline-flex;
+    } 
+    
+    .listMemes:hover .iconClose {
+        display: none;
+    }
+    
+    .listMemes:hover .chosen.memeElement .iconClose {
+        display: inline-flex;
+    }
+
+    .listMemes:hover .chosen.memeElement .iconPlus {
+        display: none;
+    }
+    
+    .memeElement:hover .image {
+        cursor: pointer;
+        max-height: 200em;
+        visibility: visible;
+    }
+    
+    .memeElement:hover .iconPlus {
+        cursor: pointer;
+        display: none;
+    }
+    
+    .memeElement:hover .iconClose {
+        cursor: pointer;
+        display: inline-flex;
+    }
+  }
