@@ -51,3 +51,23 @@ img {
 div.image, button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 820px) {
+    p {
+        font-size: x-large;
+    }
+
+    button {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    p {
+        font-size: large;
+    }
+
+    button {
+        font-size: small;
+    }
+}
