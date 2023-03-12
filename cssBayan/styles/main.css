@@ -76,40 +76,6 @@ div {
     transition-duration: 0.5s;
 }
 
-.listMemes:hover button {
-    cursor: pointer;
-    color: black;
-    visibility: visible;
-}
-
-.listMemes:hover .iconPlus {
-    display: inline-flex;
-} 
-
-.listMemes:hover .iconClose {
-    display: none;
-}
-
-.listMemes:hover .chosen.memeElement .iconClose {
-    display: inline-flex;
-}
-
-.memeElement:hover .image {
-    cursor: pointer;
-    max-height: 200em;
-    visibility: visible;
-}
-
-.memeElement:hover .iconPlus {
-    cursor: pointer;
-    display: none;
-}
-
-.memeElement:hover .iconClose {
-    cursor: pointer;
-    display: inline-flex;
-}
-
 .chosen.memeElement .image{
     max-height: 200em;
     visibility: visible;
@@ -143,3 +109,43 @@ div {
         font-size: small;
     }
 }
+
+@media (hover: hover) {
+    .listMemes:hover button {
+        cursor: pointer;
+        color: black;
+        visibility: visible;
+    }
+    
+    .listMemes:hover .iconPlus {
+        display: inline-flex;
+    } 
+    
+    .listMemes:hover .iconClose {
+        display: none;
+    }
+    
+    .listMemes:hover .chosen.memeElement .iconClose {
+        display: inline-flex;
+    }
+
+    .listMemes:hover .chosen.memeElement .iconPlus {
+        display: none;
+    }
+    
+    .memeElement:hover .image {
+        cursor: pointer;
+        max-height: 200em;
+        visibility: visible;
+    }
+    
+    .memeElement:hover .iconPlus {
+        cursor: pointer;
+        display: none;
+    }
+    
+    .memeElement:hover .iconClose {
+        cursor: pointer;
+        display: inline-flex;
+    }
+  }
