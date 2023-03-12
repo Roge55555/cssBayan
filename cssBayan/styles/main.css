@@ -19,6 +19,8 @@ button {
     width: 80%;
     margin: auto;
     display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 
     border-bottom: 0em;
     border-left: 0em;
@@ -38,7 +40,7 @@ div {
     margin: auto;
 }
 
-img {
+.meme {
     width: 60%;
     height: 60%;
     margin: auto;
