@@ -59,26 +59,38 @@ div {
     padding-bottom: 1vw;
     padding-top: 1vw;
 
-    
 }
 
-.memElement {
+.memeElement {
     width: 100%;
 }
 
 .image {
     max-height: 0em;
     visibility: hidden;
+    transition-duration: 0.5s;
 }
 
-.icon {
-    visibility: hidden;
+.iconPlus, .iconClose {
+    display: none;
 }
 
-.listMemes:hover .icon, .listMemes:hover button {
+.listMemes:hover button {
     cursor: pointer;
     color: black;
     visibility: visible;
+}
+
+.listMemes:hover .iconPlus {
+    display: inline-flex;
+} 
+
+.listMemes:hover .iconClose {
+    display: none;
+}
+
+.listMemes:hover .chosen.memeElement .iconClose {
+    display: inline-flex;
 }
 
 .memeElement:hover .image {
@@ -87,9 +99,28 @@ div {
     visibility: visible;
 }
 
-.chosen {
+.memeElement:hover .iconPlus {
+    cursor: pointer;
+    display: none;
+}
+
+.memeElement:hover .iconClose {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.chosen.memeElement .image{
     max-height: 200em;
     visibility: visible;
+}
+
+.chosen.memeElement button{
+    color: black;
+}
+
+.chosen.memeElement .iconPlus{
+    cursor: pointer;
+    display: none;
 }
 
 @media screen and (max-width: 820px) {
